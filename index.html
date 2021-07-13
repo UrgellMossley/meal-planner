@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Prep</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="list">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="#">Menu</a> </li>
+                <li><a href="suggestion.html">Suggestions</a> </li>
+                <li><a href="#">Contact</a> </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <h1 class="title">Meals By George</h1> 
+            <div class="header-img"></div>
+            <a class="scroll-down" href="#higlight-container">
+                <button class="scroll-btn"></button>
+            </a>
+            <div class="bubble" id="bubble1"></div>
+            <div class="bubble" id="bubble2"></div>
+        </header>
+        <div class="highlight-container" id="higlight-container">
+            <h2 class="highlight-title">Highlights</h2>
+            <h5 class="hl-sub-title">Tried and tested recipes...</h5>
+        <a href="#meal-info">
+            <div class="highlight">   
+                <h4 class="lead-text">Chicken Curry</h4>
+    
+                         <!-- Photo by <a href="https://unsplash.com/@ferhadd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Farhad Ibrahimzade</a> on <a href="https://unsplash.com/s/photos/chicken-curry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+            </div>
+        </a>
+        
+        
+        <div class="highlight-el-container">
+            
+            <button class="arrow left">
+                <span><i class="fas fa-chevron-left"></i></span>
+            </button>
+            <a href="#meal-info"></a>
+
+
+
+            <button class="arrow right" >
+                <span><i class="fas fa-chevron-right"></i></span>
+            </button>
+                
+        </div>  
+       
+        
+        <div class="meal-info" id="meal-info"></div>
+        <div class="recipe">
+            <ul class="ingredient-list"></ul>
+
+        </div>
+        <a class="" href="#suggestion-form">
+            <button class="scroll-btn btn2"></button>
+        </a>
+        </div>
+        
+       
+
+        <form class="wishlist" id="suggestion-form">
+              <h2 class="sub-title">Recipe Wishlist</h2>
+              <h4>Let me know what meals you want this week!</h4>
+                <small>Meal Title:</small>
+                <input type="text" required class="recipe-title" id="suggestion-title" placeholder="what is your meal called?">
+                <small>Meal Ingredients:</small>
+                <input type="text" required class="recipe-ingredients" id="suggestion-ing" placeholder="what is your meal's main ingredient?">
+                <small>Meal Style:</small>
+
+                <textarea name="style" required class="recipe-style" id="suggestion-style" placeholder="How do you want it cooked (spicy/chinese/etc)?" cols="40" rows="10"></textarea>
+                
+                <button class="submit-btn">Submit!</button>
+        </form> 
+    </div>
+    <script src="functions.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
